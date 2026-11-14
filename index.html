@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Les Demoiselles · Tous nos liens</title>
+<meta name="description" content="Tous les liens de Les Demoiselles, boutique de prêt-à-porter femme à Oran (Bd Abane Ramdane) : WhatsApp, téléphone, avis Google, Instagram, TikTok, Snapchat et itinéraire. Livraison partout en Algérie.">
+<meta name="theme-color" content="#f8f3ee">
+<meta property="og:title" content="Les Demoiselles · Tous nos liens">
+<meta property="og:description" content="Prêt-à-porter femme à Oran, livraison partout en Algérie. WhatsApp, Instagram, TikTok, Snapchat, avis Google et itinéraire.">
+<meta property="og:type" content="website">
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("js")</script>
+<style>
+  /* Les Demoiselles : page « tous nos liens », ouverte par le QR code / NFC de la plaque. */
+  :root {
+    --ivory: #f8f3ee; --ivory-2: #fffdfb; --ink: #111111; --ink-2: #2a2a2a;
+    --muted: #6f6763; --line: rgba(17,17,17,.1); --rose: #b9546f; --blush: #f3dde3; --gold: #c99a2e;
+    --text: "Jost", system-ui, sans-serif;
+    --ease: cubic-bezier(.22,1,.36,1);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { background: var(--ivory); color: var(--ink); font: 400 17px/1.5 var(--text); -webkit-font-smoothing: antialiased; min-height: 100vh; min-height: 100dvh; }
+  a { color: inherit; text-decoration: none; }
+  button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+  :focus-visible { outline: 2px solid var(--rose); outline-offset: 3px; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+  .bg { position: fixed; inset: 0; z-index: -1; overflow: hidden; background: var(--ivory); }
+  .bg img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.08); opacity: .55; }
+  .bg::after { content: ""; position: absolute; inset: 0; background: radial-gradient(110% 55% at 50% 0%, rgba(243,221,227,.75), transparent 62%), linear-gradient(180deg, rgba(248,243,238,.55), rgba(248,243,238,.9) 38%, rgba(248,243,238,.97)); }
+  @media (prefers-reduced-motion: no-preference) { .bg img { animation: drift 40s ease-in-out infinite alternate; } }
+  @keyframes drift { from { transform: scale(1.08); } to { transform: scale(1.16) translate(-2%, -2%); } }
+
+  .wrap { max-width: 460px; margin-inline: auto; padding: 28px 18px calc(36px + env(safe-area-inset-bottom)); position: relative; }
+  header { text-align: center; padding-top: 36px; }
+  .logo { width: min(330px, 88%); height: auto; margin: 0 auto; display: block; }
+  .sub { display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 20px; font: 500 12px/1 var(--text); letter-spacing: .2em; text-transform: uppercase; white-space: nowrap; color: var(--ink-2); }
+  .sub::before, .sub::after { content: ""; flex: none; width: 22px; height: 1px; background: var(--rose); }
+  .chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 16px; }
+  .chips > span, .status { display: inline-flex; align-items: center; gap: 8px; height: 32px; padding: 0 13px; border-radius: 999px; background: rgba(255,253,251,.8); border: 1px solid var(--line); font: 500 13px/1 var(--text); color: var(--muted); }
+  .chips .stars { font-size: 12px; }
+  .chips svg { width: 15px; height: 15px; color: var(--rose); }
+  .status i { width: 8px; height: 8px; border-radius: 50%; background: #2fb36d; }
+  .status.closed i { background: var(--rose); }
+  @media (prefers-reduced-motion: no-preference) { .status:not(.closed) i { animation: pulse 2s infinite; } }
+  @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(47,179,109,.5); } 70% { box-shadow: 0 0 0 8px rgba(47,179,109,0); } 100% { box-shadow: 0 0 0 0 rgba(47,179,109,0); } }
+
+  .links { list-style: none; display: grid; gap: 12px; margin-top: 30px; }
+  .links a { display: flex; align-items: center; gap: 14px; min-height: 62px; padding: 10px 18px 10px 10px; border-radius: 16px; background: rgba(255,253,251,.92); border: 1px solid var(--line); box-shadow: 0 10px 24px -18px rgba(17,17,17,.35); font: 500 17px/1.2 var(--text); transition: transform .15s var(--ease), border-color .2s, background .2s; }
+  .links a:hover { border-color: rgba(185,84,111,.45); background: #fff; }
+  .links a:active { transform: scale(.98); }
+  .links .ic { flex: none; width: 42px; height: 42px; border-radius: 12px; display: grid; place-items: center; background: var(--ink); color: var(--ivory); }
+  .links .ic svg { width: 20px; height: 20px; }
+  .links .tx { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+  .links .tx small { font-size: 13px; color: var(--muted); }
+  .links .go { flex: none; width: 18px; height: 18px; color: var(--muted); transition: transform .2s var(--ease), color .2s; }
+  .links a:hover .go { color: var(--rose); transform: translateX(3px); }
+  .links a.main { background: var(--ink); border-color: var(--ink); color: var(--ivory); font-weight: 600; box-shadow: 0 14px 30px -14px rgba(17,17,17,.6); }
+  .links a.main .ic { background: rgba(255,255,255,.14); }
+  .links a.main .tx small { color: rgba(248,243,238,.78); }
+  .links a.main .go { color: var(--ivory); }
+  .links a.main:hover { background: var(--ink-2); }
+  .links a.google .ic { background: var(--blush); }
+  .links a.google .ic svg { width: 22px; height: 22px; }
+  .stars { color: var(--gold); letter-spacing: .12em; }
+
+  footer { text-align: center; margin-top: 30px; color: var(--muted); font-size: 13px; line-height: 1.8; }
+  footer a { color: var(--ink); border-bottom: 1px solid rgba(185,84,111,.45); }
+  .credit { margin-top: 22px; display: inline-flex; align-items: center; gap: 8px; color: #8d8580; font: 500 10px/1 "Jost", sans-serif; letter-spacing: .22em; text-transform: uppercase; }
+  .credit img { height: 15px; width: auto; }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .js header > *, .js .links li, .js footer { animation: rise .7s var(--ease) both; }
+    .js header > :nth-child(3) { animation-delay: .05s; } .js header > :nth-child(4) { animation-delay: .1s; }
+    .js .links li { animation-delay: calc(.18s + var(--i) * 60ms); }
+    .js footer { animation-delay: .55s; }
+  }
+  @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+</style>
+</head>
+<body>
+<div class="bg"><img src="img/bg-blur.jpg" alt=""></div>
+
+<div class="wrap">
+  <header>
+    <h1 class="sr">Les Demoiselles</h1>
+    <img class="logo" src="img/logo-les-demoiselles.svg" alt="Les Demoiselles…" width="688" height="350">
+    <p class="sub">Prêt-à-porter femme · Oran</p>
+    <div class="chips">
+      <p class="status" id="status"><i aria-hidden="true"></i><span id="status-t">10h – 20h · fermé le vendredi</span></p>
+      <span><span class="stars" aria-hidden="true">★</span><span>5,0 sur Google</span></span>
+      <span><svg viewBox="0 0 640 512" fill="currentColor" aria-hidden="true"><path d="M48 0C21.5 0 0 21.5 0 48V368c0 26.5 21.5 48 48 48H64c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H48zM416 160h50.7L544 237.3V256H416V160zM112 416a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm368-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg><span>Livraison partout en Algérie</span></span>
+    </div>
+  </header>
+
+  <ul class="links">
+    <li style="--i:0"><a class="google" href="https://search.google.com/local/writereview?placeid=ChIJg9hObgCJfg0RPTTOrsmSy8A" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.6-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-7.9l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.6-.4-3.5z"/></svg></span>
+      <span class="tx"><span>Laisser un avis Google</span><small><span class="stars" aria-hidden="true">★★★★★</span> <span>Votre avis compte</span></small></span>
+      <svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></a></li>
+    <li style="--i:1"><a class="main" href="https://wa.me/33627571473" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 448 512" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></span>
+      <span class="tx"><span>Écrire sur WhatsApp</span><small>Tailles, disponibilités et prix</small></span>
+      <svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></a></li>
+    <li style="--i:2"><a href="tel:+33627571473">
+      <span class="ic"><svg viewBox="0 0 512 512" fill="currentColor"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg></span>
+      <span class="tx"><span>Appeler</span><small>+33 6 27 57 14 73</small></span>
+      <svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></a></li>
+    <li style="--i:3"><a href="https://www.instagram.com/les_demoiselles.deparis/" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 448 512" fill="currentColor"><path d="M224 141Q175 142 143 175Q110 207 109 256Q110 305 143 337Q175 370 224 371Q273 370 305 337Q338 305 339 256Q338 207 305 175Q273 142 224 141ZM224 331Q192 330 171 309Q150 288 149 256Q150 224 171 203Q192 182 224 181Q256 182 277 203Q298 224 299 256Q298 288 277 309Q256 330 224 331ZM371 136Q368 161 344 163Q319 161 317 136Q317 125 325 117Q332 110 344 110Q355 110 363 117Q370 125 371 136ZM447 164Q447 109 410 70Q371 33 317 33Q297 32 260 32Q224 32 188 32Q151 32 132 33Q78 33 38 70Q1 109 2 163Q0 183 0 220Q0 256 0 292Q0 328 2 348Q1 403 38 442Q77 479 132 478Q151 479 188 480Q224 480 260 480Q297 479 317 478Q371 479 410 442Q447 403 447 348Q448 328 448 292Q448 256 448 220Q448 183 447 163ZM399 388Q386 418 356 431Q336 438 302 439Q268 440 240 440Q231 440 224 440Q217 440 208 440Q180 440 146 439Q113 438 92 431Q62 418 49 388Q42 367 41 334Q40 300 40 272Q40 263 40 256Q40 249 40 240Q40 212 41 178Q42 144 49 124Q62 94 92 81Q113 74 146 73Q180 71 208 72Q217 72 224 72Q231 72 240 72Q268 72 302 73Q336 74 356 81Q386 94 399 124Q406 144 407 178Q409 212 408 240Q408 249 408 256Q408 263 408 272Q409 300 407 334Q406 368 399 388Z"/></svg></span>
+      <span class="tx"><span>Instagram</span><small>@les_demoiselles.deparis</small></span>
+      <svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></a></li>
+    <li style="--i:4"><a href="https://www.tiktok.com/@lesdemoisellesdeparis1" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 448 512" fill="currentColor"><path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg></span>
+      <span class="tx"><span>TikTok</span><small>@lesdemoisellesdeparis1</small></span>
+      <svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></a></li>
+    <li style="--i:5"><a href="https://www.snapchat.com/add/demoiselles.p" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 512 512" fill="currentColor"><path d="M497 367Q491 354 480 348Q478 347 476 347Q475 346 473 345Q471 344 469 343Q435 325 417 298Q411 290 407 282Q406 277 407 275Q408 273 410 272Q416 268 421 265Q428 261 432 258Q446 248 452 237Q461 219 454 201Q443 176 414 175Q408 175 402 176Q401 176 399 177Q399 160 398 142Q395 112 386 94Q377 75 365 63Q351 47 332 36Q298 17 256 17Q214 17 180 36Q161 47 147 63Q135 76 126 94Q117 112 114 142Q113 160 113 177Q111 177 110 176Q104 175 98 175Q69 176 58 201Q51 219 60 237Q66 248 80 258Q83 260 88 263Q90 264 91 265Q95 268 101 272Q103 273 105 275Q106 277 104 282Q101 290 95 298Q77 324 44 342Q41 344 39 345Q23 351 15 367Q9 383 24 399Q29 405 36 409Q50 417 66 421Q70 422 72 424Q75 426 76 430Q77 433 80 438Q84 444 89 447Q104 456 122 455Q139 455 159 461Q168 464 178 471Q190 479 209 487Q228 494 256 495Q284 494 303 487Q322 479 334 471Q334 471 334 471Q344 464 353 461Q373 455 389 455Q390 455 390 455Q408 456 423 448Q429 443 433 436Q435 433 436 430Q437 426 440 424Q442 422 445 421Q461 417 476 409Q483 405 489 399V398Q503 383 497 367ZM463 385Q446 393 434 396Q425 398 418 402Q411 407 411 415Q411 422 407 425Q402 428 388 428Q371 427 344 435Q332 440 320 447Q308 455 294 461Q279 467 256 468Q234 467 219 461Q204 455 193 447Q181 440 168 435Q141 427 124 428Q110 428 105 425Q101 422 101 415Q101 407 94 402Q87 398 78 396Q66 393 49 385Q40 379 42 376Q44 373 48 371Q103 341 120 311Q137 280 135 274Q136 274 136 274Q138 267 131 260Q123 253 106 243Q99 238 95 236Q79 225 83 211Q88 202 98 202Q101 202 104 203Q115 206 124 209Q130 212 135 213Q136 213 137 213Q142 214 142 208Q142 206 141 204Q139 181 141 145Q143 121 150 106Q157 92 167 81Q172 74 193 60Q215 46 256 44Q297 46 319 60Q340 74 345 81Q355 91 362 106Q369 120 371 145Q372 162 372 179Q371 195 370 206Q370 207 370 207Q370 214 375 213Q376 213 377 213Q382 212 388 209Q397 205 408 203Q411 202 414 202Q424 202 429 211Q433 225 417 236Q413 238 406 242Q389 253 381 260Q374 267 376 274Q376 274 377 274Q375 279 392 310Q409 341 464 371Q468 372 470 376Q472 379 463 385Z"/></svg></span>
+      <span class="tx"><span>Snapchat</span><small>demoiselles.p</small></span>
+      <svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></a></li>
+    <li style="--i:6"><a href="https://www.google.com/maps/dir/?api=1&amp;destination=Les+demoiselles+Oran&amp;destination_place_id=ChIJg9hObgCJfg0RPTTOrsmSy8A" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 384 512" fill="currentColor"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg></span>
+      <span class="tx"><span>Itinéraire</span><small>Bd Abane Ramdane, Oran</small></span>
+      <svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></a></li>
+  </ul>
+
+  <footer>
+    <p>Tous les jours 10h – 20h · fermé le vendredi</p>
+    <p>Bd Abane Ramdane, centre-ville d'Oran</p>
+    <div class="credit"><span>Designed by</span><img src="img/oranova-logo-dark.svg" alt="Oranova" width="470" height="100"></div>
+  </footer>
+</div>
+
+<script>
+// Horaires donnés par la cliente (12/11/2026) : 10h – 20h, fermé le vendredi
+const OPEN = 10, CLOSE = 20, CLOSED_DAY = "Fri";
+const DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+const t = { hours: "10h – 20h · fermé le vendredi", isOpen: "Ouvert · ferme à", isClosed: "Fermé · ouvre", at: "à", tomorrow: "demain",
+            days: { Sun: "dimanche", Mon: "lundi", Tue: "mardi", Wed: "mercredi", Thu: "jeudi", Fri: "vendredi", Sat: "samedi" } };
+const hm = h => `${Math.floor(h)}h${String(Math.round(h % 1 * 60)).padStart(2, "0")}`;
+function status() {
+  const el = document.getElementById("status"), txt = document.getElementById("status-t");
+  try {
+    const parts = new Intl.DateTimeFormat("en-US", { timeZone: "Africa/Algiers", weekday: "short", hour: "numeric", minute: "numeric", hour12: false }).formatToParts(new Date());
+    const get = k => parts.find(p => p.type === k).value;
+    const day = get("weekday"), h = +get("hour") % 24 + +get("minute") / 60;
+    const isOpen = day !== CLOSED_DAY && h >= OPEN && h < CLOSE;
+    el.classList.toggle("closed", !isOpen);
+    if (isOpen) { txt.textContent = `${t.isOpen} ${hm(CLOSE)}`; return; }
+    // Prochaine ouverture : aujourd'hui, demain, ou un jour nommé (le vendredi est sauté)
+    let ahead = day !== CLOSED_DAY && h < OPEN ? 0 : 1, next = DAYS[(DAYS.indexOf(day) + ahead) % 7];
+    if (next === CLOSED_DAY) { ahead++; next = DAYS[(DAYS.indexOf(day) + ahead) % 7]; }
+    const when = ahead === 0 ? t.at : ahead === 1 ? `${t.tomorrow} ${t.at}` : `${t.days[next]} ${t.at}`;
+    txt.textContent = `${t.isClosed} ${when} ${hm(OPEN)}`;
+  } catch (e) { txt.textContent = t.hours; }
+}
+
+status();
+</script>
+</body>
+</html>
